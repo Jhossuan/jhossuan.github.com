@@ -1,0 +1,27 @@
+.container{
+    background-color: rgba(51, 51, 51, 0.637);
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 250px;
+    width: 220px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.container:hover{
+    background-color: rgba(0, 0, 0, 0.657);
+    transition: 0.3s;
+}
+
+.closeButton{
+    border-radius: 1px 4px 1px 1px;
+    border: none;
+    height: 20px;
+    font-size: 13px;
+    color: white;
+    background-color: tomato;
+    float: right;
+}
