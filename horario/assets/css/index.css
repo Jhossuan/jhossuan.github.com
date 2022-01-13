@@ -1,0 +1,92 @@
+/* 
+COLORES:
+#53FCA3
+#DBCF41
+#4EDDFC
+*/
+body{
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+}
+
+#container{
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+#content{
+    background-color: white;
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px 5px #495867;
+    transition: 0.3s;
+    animation-duration: 1.5s;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+h1{
+    text-align: center;
+}
+
+td{
+    display: block;
+    width: 100%;
+}
+
+th{
+    display: none;
+}
+
+#content:hover{
+    box-shadow: 10px 10px 10px 2px #495867;
+    transition: 0.3s;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #E0EBF5;
+}
+
+
+/* MEDIA QUERYS PARA DISEÑO RESPONSIVE */
+@media(min-width:900px){
+    th{
+        display: table-cell;
+        font-size: 1em;
+    }
+    td{
+        display: table-cell;
+        width: auto;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    #content{
+        padding: 1.8em;
+    }
+}
+
+@media(min-height:550px){
+    #content{
+        height: 500px;
+    }
+}
