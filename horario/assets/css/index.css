@@ -32,6 +32,8 @@ body{
     border-radius: 5px;
     text-align: left;
     overflow-y: scroll;
+    animation: slideInDown;
+    animation-duration: 2s;
 }
 
 h1{
