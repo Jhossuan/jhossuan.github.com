@@ -1,7 +1,6 @@
-prompt('Cual es tu nombre? Chismos@😎')
-alert('Bueno, me vale 3kilos de monda🥵🥶')
+alert('Horario de estudio para desarrollo front-end😎')
 
 const direccion = document.querySelector('.butt')
 direccion.addEventListener('click',function(){
-    alert('Chismos@ 🥵🥶😎')
+    alert('Seras direccionado al horario✌')
 })
