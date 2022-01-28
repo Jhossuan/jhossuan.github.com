@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+*{
+    font-family: 'Fraunces', serif;
+}
+
+body{
+    background-color: #34495e;
+}
+
+.calculadora{
+    width: 300px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #8e44ad;
+    box-shadow: 10px 10px 5px 2px #0000007e;
+}
+
+.display{
+    grid-column: 1 / -1;
+    height: 100px;
+    padding: 16px;
+    display: flex;
+    margin: 10px 1px 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #4f2261;
+    color: white;
+    justify-content: space-between;
+    word-break: break-all;
+}
+/* width: 290px;
+height: 140px;
+background-color: rgb(66, 66, 66);
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5px;
+border-radius: 10px;
+box-shadow: 1px 1px 5px 0px #4f2261;
+color: white;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+grid-column: 1 / -1;
+*/
+
+.buttons{
+    margin: 10px 10px;
+}
+
+button{
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #9b59b6;
+    box-shadow: 2px 2px 5px 0px #00000085;
+    cursor: pointer;
+}
+
+button.col-2{
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    width: 130px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 7.5px;
+    font-size: large;
+    color: white;
+    background-color: #9b59b6;
+    box-shadow: 2px 2px 5px 0px #00000085;
+    cursor: pointer;
+}
+
+
+button:active{
+    transition: 0.1s;
+    background-color: #804796;
+    box-shadow: 1px 1px 5px 0px #00000085;
+} 
+
+#valor-actual{
+    font-size: 1.2em;
+}
+
+#valor-anterior{
+    font-size: 1.5em;
+}
+
+.info{
+    text-align: center;
+    margin-top: 30px;
+}
+
+small{
+    color: black;
+}
+
+a {
+    color: white;
+}
