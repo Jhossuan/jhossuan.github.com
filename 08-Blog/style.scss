@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+// *************CSS Reload**************** \\
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background:linear-gradient(to left,#2bcbba, #26de81) ;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+// ******** HEADER Y LOGO ********* \\
+
+.header{
+    background:linear-gradient(to left,#2bcbba, #26de81) ;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.header h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+//************ BOTON DEL MENU HAMBURGUESA *************\\
+
+.panel.is-active{//Panel para desplegar el menu de hamburguesa
+    transform: translate(0,0);
+}
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color_button{
+    background:linear-gradient(to left,#2bcbba, #26de81);
+    width: 50px;
+    // height: 20px;
+    padding: 10px 10px 5px 5px;
+    border-radius: 50%;
+}
+
+//************* MENU DE NAVEGACIÓN ********************\\
+.panel{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background:linear-gradient(to left,#2bcbba, #26de81);
+    transition: transform 0.3s ease;
+    transform: translate(-100%, 0);//Propiedad para que se oculte el menú
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.menu a{
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color:white;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+.menu a:active{
+    background-color: #a5b1c2;
+}
+
+//*************** SECCIONES *******************\\
+.section{
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    text-align: center;
+}
+// ********************************
+    .container{
+        // border: 1px solid red;
+        background-color: #a5b1c2;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.712);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .inicio{
+        background-color:#ffff;
+    }
+    .quien_soy{
+        // border: 1px solid black;
+        background-color: #d1d8e0;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        }
+
+    .perfil{
+        width: 130px;
+        display: inline-block;
+    }
+        .perfil img{
+            width: 120px;
+            float: left;
+            border-radius: 50%;
+        }
+
+    .sobre_mi{
+        // border:1px solid red;
+        margin-top: 10px;
+    }
+        .title{
+            // border: 1px solid blue;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .sobre_mi img{
+            width: 80px;
+            // border: 1px solid blue;
+            margin: 5px;
+        }
+
+        .descripcion_sm{
+            text-align: center;
+        }
+    .tecnologys{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+// ********************************
+    .portafolio{
+        background-color: #d1d8e0;
+    }
+// ********************************
+    .cv{
+        background-color:#ffff;
+    }
+// ********************************
+    .contactame{
+        background-color: #d1d8e0;
+    }
+
+
+
+
+
+// *************MEDIA QUERYS*************
+// *******DESKTOP*********
+@media (min-width: 1000px){
+    .container{
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50em;
+    }
+    .quien_soy{
+        // border: 1px solid blue;
+        background-color: transparent;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        width: 60%;
+        font-size: 20px;
+
+        }
+
+    .perfil{
+        display: flex;
+        justify-content: center;
+        border-radius: 5px 5px 0px 0px;
+        background-size: cover;
+        width: auto;
+        padding: 10px;
+        // border: 1px solid blue;
+    }
+        .perfil img{
+            width: 250px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.555);
+        }
+    
+    .sobre_mi, .motivacion{
+        margin-top: 20px;
+        margin-left: 10px;
+        background-color: rgba(255, 255, 255, 0.281);
+        width: 45%;
+        display: inline-block;
+        padding: 0px 20px 0px 20px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.555);
+        border-radius: 5px;
+    }
+    .todo{
+        display: flex;
+        align-items:baseline;
+        // border: 1px solid red;
+        text-align: center;
+    }
+}
+// *****MOBILE*****\\
+
+@media (max-width: 500px){
+    .container{
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.712);
+        padding: 10px;
+        justify-content: center;
+        border-radius: 5px;
+        margin-top: 20px;
+        // border: 1px solid orange;
+        display: flex;
+        flex-direction: column;
+    }
+    .quien_soy{
+        // border: 1px solid black;
+        background-color: #d1d8e0;
+        border-radius: 0px 0px 5px 5px;
+        text-align: center;
+        padding: 10px;
+        width: 300px;
+        // border: 1px solid red;
+        }
+
+    .perfil{
+        display: flex;
+        justify-content: center;
+        border-radius: 5px 5px 0px 0px;
+        background-image: url(./imagenes/banner.jpg);
+        background-size: cover;
+        width: 300px;
+        padding: 10px;
+    }
+        .perfil img{
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.582);
+        }
+}
