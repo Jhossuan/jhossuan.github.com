@@ -229,7 +229,9 @@ body {
 }
 
 .cards {
-  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,8 +244,6 @@ body {
 .card {
   background-color: #20bf6b;
   color: white;
-  width: 30rem;
-  height: 13rem;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.568);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.568);
@@ -251,6 +251,9 @@ body {
   padding: 10px 20px 10px 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin: 10px;
+  width: 20rem;
+  height: 15rem;
 }
 
 .card:hover {
@@ -261,6 +264,11 @@ body {
   float: right;
   margin: 10px;
   width: 30px;
+}
+
+small {
+  background-color: #1aad5c75;
+  padding: 5px;
 }
 
 .titulo_card {
@@ -278,6 +286,20 @@ body {
 }
 
 @media (min-width: 1000px) {
+  .card {
+    background-color: #20bf6b;
+    color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.568);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.568);
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: 10px;
+    width: 20rem;
+    height: 15rem;
+  }
   .container {
     background-color: transparent;
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
@@ -353,7 +375,8 @@ body {
 @media (max-width: 500px) {
   .card {
     width: 18rem;
-    padding: 10px;
+    height: 18rem;
+    padding: 50px 10px 10px 10px;
   }
   .container {
     -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.712);
