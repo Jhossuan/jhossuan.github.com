@@ -366,7 +366,7 @@ body {
 .carta {
   text-align: center;
   background-color: #9a59db;
-  background-image: url(/imagenes/Stray_Kids_logo_PNG4.png);
+  background-image: url(./imagenes/Stray_Kids_logo_PNG4.png);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -463,7 +463,7 @@ body {
   border: 1px solid #cc98ce;
   text-align: center;
   color: black;
-  background-image: url(/imagenes/Stray_Kids_logo_PNG4.png);
+  background-image: url(./imagenes/Stray_Kids_logo_PNG4.png);
   background-color: #decedf;
   background-attachment: fixed;
   background-size: 10rem;
@@ -596,7 +596,7 @@ body {
 
 .photosChinitos {
   background-color: #a980d3;
-  background-image: url(/imagenes/Stray_Kids_logo_PNG4.png);
+  background-image: url(./imagenes/Stray_Kids_logo_PNG4.png);
   background-size: 300px;
   background-attachment: fixed;
 }
