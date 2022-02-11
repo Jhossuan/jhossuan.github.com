@@ -355,15 +355,15 @@ body{
     background-color: blueviolet;
     align-items: center;
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 .container{
     background-color: rgba(0, 0, 0, 0.308);
-    padding: 50px;
+    padding: 80px;
 }
 .textojeje{
     font-size: 50px;
-    margin: 0;
+    margin-bottom: 30px;
     padding: 0;
     color: white;
     font-family: 'Balsamiq Sans', cursive;
