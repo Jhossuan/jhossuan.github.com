@@ -20,7 +20,7 @@ export default function countdown(id, limitDate){
 
         if(limitTime < 0){
         clearInterval(countdownTempo);
-        $countdown.innerHTML = `<a class="vamos" href="cumpleaños/principal/main.html">¡Clickeame! 😏</a>`;
+        $countdown.innerHTML = `<a class="vamos" href="./principal/main.html">¡Clickeame! 😏</a>`;
         d.querySelector(".textojeje").textContent = "Feliz Cumpleaños doctora guapalentina. 😘"
         alert('Yeeeeei, feliz cumpleaños!!!🎉')
         }
