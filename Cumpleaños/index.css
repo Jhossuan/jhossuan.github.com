@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+body {
+  background-color: rebeccapurple;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.feliz-cumple {
+  color: white;
+  font-size: 60px;
+  font-family: 'Syne Tactile', cursive;
+  text-align: center;
+}
+
+.carta {
+  text-align: center;
+  background-color: #9a59db;
+  background-image: url(/imagenes/Stray_Kids_logo_PNG4.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.carta-cumple {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 60rem;
+  background-color: rgba(255, 255, 255, 0.726);
+  border-radius: 30px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 10px 2px;
+          box-shadow: 0px 0px 10px 2px;
+}
+
+.carta-cumple p {
+  font-size: 30px;
+  color: black;
+  font-family: 'Patrick Hand', cursive;
+  margin: 20px;
+}
+
+.photocards img {
+  border-radius: 10px;
+  width: 20rem;
+  margin: 5px;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.555);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.555);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.photocards img:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.555);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.555);
+  width: 20.8rem;
+}
+
+.stray {
+  color: black;
+  font-family: 'Syne Tactile', cursive;
+}
+
+.kids {
+  color: red;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.texto-skd {
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.panel-btn {
+  font-size: 40px;
+  position: fixed;
+  z-index: 999;
+  bottom: 1.2vh;
+  right: 0.75vw;
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px 1px 5px 0px;
+          box-shadow: 1px 1px 5px 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #a980d3;
+}
+
+.panel-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px;
+          box-shadow: 0px 0px 10px 0px;
+}
+
+.lista-deseos {
+  border: 1px solid #cc98ce;
+  text-align: center;
+  color: black;
+  background-image: url(/imagenes/Stray_Kids_logo_PNG4.png);
+  background-color: #decedf;
+  background-attachment: fixed;
+  background-size: 10rem;
+}
+
+.container-generador {
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  background-color: #67faff;
+  -webkit-box-shadow: 0px 0px 10px 1px;
+          box-shadow: 0px 0px 10px 1px;
+  padding: 10px;
+}
+
+.container-generador h3 {
+  font-size: 30px;
+  padding: 10px;
+  font-family: 'Syne Tactile', cursive;
+}
+
+.container-generador p {
+  font-family: 'Patrick Hand', cursive;
+  margin: 20px;
+}
+
+.generador {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2fd49d;
+  margin: 10px;
+}
+
+.generador input {
+  text-align: center;
+  border: 2px dashed #6868be;
+  margin: 5px;
+  height: 25px;
+  width: 45rem;
+  border-radius: 5px;
+}
+
+.generador button {
+  width: 20rem;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b0fff4;
+  font-size: 20px;
+  font-family: 'Syne Tactile', cursive;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.generador button:active {
+  background-color: #63a199;
+}
+
+.cards {
+  margin: 50px 20px;
+}
+
+.card {
+  background-color: #bf92c4;
+  max-width: 20rem;
+  padding: 15px;
+  min-height: 20rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 2px;
+          box-shadow: 0px 0px 10px 2px;
+  margin: 0 30px 30px 0;
+  display: inline-block;
+}
+
+.card h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
+  color: white;
+}
+
+.deseo-descripcion {
+  padding: 5px;
+  min-height: 15rem;
+  background-color: rgba(255, 255, 255, 0.308);
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.deseo-descripcion p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.photosChinitos h3 {
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
+
+.photosChinitos p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+.photosChinitos h3 {
+  background-color: rgba(0, 0, 0, 0.63);
+  padding: 30px;
+}
+
+.photosChinitos p {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.63)), to(transparent));
+  background: linear-gradient(rgba(0, 0, 0, 0.63), transparent);
+}
+
+.photosChinitos {
+  background-color: #a980d3;
+  background-image: url(/imagenes/Stray_Kids_logo_PNG4.png);
+  background-size: 300px;
+  background-attachment: fixed;
+}
+
+.photocardsjeje img {
+  width: 20rem;
+  border-radius: 10px;
+  margin: 20px 50px;
+  -webkit-box-shadow: 2px 2px 10px 2px;
+          box-shadow: 2px 2px 10px 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.photocardsjeje img:hover {
+  -webkit-box-shadow: 0px 0px 10px 2px;
+          box-shadow: 0px 0px 10px 2px;
+  width: 20.5rem;
+  margin: 15px 45px;
+}
+
+.final h3 {
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+}
+
+.final p {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  width: 60rem;
+}
+
+.contador {
+  font-size: 20px;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

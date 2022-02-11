@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    background-color: blueviolet;
+    align-items: center;
+    text-align: center;
+    margin-top: 15rem;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 50px;
+}
+.textojeje{
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#counterxd{
+    text-align: center;
+    color: rgb(0, 238, 255)
+}
+#counterxd h3{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+#counterxd span{
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.vamos{
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.788);
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 100px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.vamos:hover{
+    background-color: rgba(240, 248, 255, 0.397);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.788);
+    transition: 0.2s;
+    color: white;
+}
