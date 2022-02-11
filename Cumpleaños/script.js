@@ -43,5 +43,12 @@ function addCard(nameDeseo, descripDeseo){
     card.appendChild(small);
     cards.appendChild(card);
 }
-// ******************************************** Temporizador de cumple ****************************************************
+// ******************************************** Sonido al dar click ****************************************************
+const panel_btn = d.querySelector('.panel-btn');
+panel_btn.addEventListener('click',()=>{
+    alert('Sube el volumen')
+    let texto = "Feliz cumpleaños, ya te lo he dicho como 10mil veces jajajaja. Espero que hayas leido todo y te haya gustado, y tambien leido todo el texto final jajaja, perdon por este regalo tan chimbo, pero bueno, es lo que hay. besos doctora guapalentina reina, tilina, princesa, tiktoker, aesteric, darkgirl, beibigerl, bitiesiña, keipopsiña, estraikidslover, yossualover. Un momento, ya casi termino. TE AMOOOOOO. Listo, cuidate y disfruta jajajaj"
+    const hablar = (texto) => speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+    hablar(texto);
+})
 

@@ -4,7 +4,7 @@ const d = document;
 d.addEventListener("DOMContentLoaded", e=>{
     countdown(
         "counterxd",
-        "Feb 11,2022 09:10:20",
+        "Feb 27,2022 10:30:00",
         );
 });
 
