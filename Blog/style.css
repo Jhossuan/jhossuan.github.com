@@ -695,8 +695,8 @@ nav p {
 }
 
 .cmsp {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   max-width: 50rem;
   text-align: center;
   margin-left: auto;
@@ -704,9 +704,17 @@ nav p {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.781);
 }
 
-.uilogo {
+.uilogo img {
   width: 10rem;
-  margin-left: 30%;
+}
+
+.uilogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
