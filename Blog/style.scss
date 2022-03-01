@@ -380,7 +380,7 @@ body{
 
 section{
     min-height: 20rem;
-    padding:20px;
+    padding:30px;
 }
 
 /************ NAVEGADOR *************/
@@ -527,12 +527,16 @@ nav p{
     border-radius: 50%;
 }
 /************* ABOUT ME ****************/
+
 #about_me span{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
+    // border: 1px solid red;
+    margin-bottom: 50px;
 }
 #about_me p{
-    font-size: 20px;
+    font-size: 15px;
+    margin-bottom: 40px;
 }
 
 .tecnologias{
@@ -549,6 +553,7 @@ nav p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
 }
 .card{
     border: 2px solid $borde-bg;
@@ -562,7 +567,7 @@ nav p{
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.61);
 }
 .title-portfolio{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 500;
 }
 .card span{
@@ -762,7 +767,6 @@ nav p{
 }
 
 .cards-project{
-    width: 100%;
     display: inline-block;
 }
 .uilogo{
