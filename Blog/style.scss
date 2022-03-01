@@ -555,14 +555,14 @@ nav p{
     align-items: center;
 }
 .card{
-    border: 2px solid $borde-bg;
+    border: 2px solid $card-bg;
     margin-top:10px;
     border-radius: 10px;
     width: 20rem;
     min-height: 25rem;
-    background-color: $card-bg;
+    background-color: $borde-bg;
     color:$light-mode-bg;
-    margin: 10px;
+    margin: 20px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.61);
 }
 .title-portfolio{
@@ -599,7 +599,7 @@ nav p{
 /************* CONTACTAME ****************/
 #contact_me{
   text-align: center;
-  padding: 20px;
+  padding: 10px 0;
   background-color: white;
   border: 2px solid $dark-mode-bg;
   border-radius: 8px;
@@ -645,7 +645,7 @@ nav p{
 }
 
 #contact_me_section{
-  background-image: url(./imagenes/fondo-setup.png);
+  background-image: url(./imagenes/fondo-mobile.jpg);
   background-attachment: fixed;
   color: white;
 }
@@ -656,7 +656,8 @@ nav p{
   text-align:center;
   margin-left: auto;
   margin-right: auto;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.781);
+  text-shadow: 3px 3px 3px black;
+
 }
 .uilogo img{
   width: 10rem;
@@ -711,13 +712,16 @@ footer img{
 }
 
 #about_me span{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
 }
 #about_me p{
     font-size: 30px;
 }
-
+#contact_me_section{
+  background-image: url(./imagenes/fondo-setup.png);
+  background-size: cover;
+}
 section{
     padding: 4vh 10vw;
 }
@@ -746,7 +750,7 @@ nav p{
     font-size: 4.6rem;
 }
 .saludo span{
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 500;
 }
 
@@ -770,8 +774,14 @@ nav p{
 .cards-project{
     display: inline-block;
 }
-.uilogo{
-  margin-left: 40%;
+.tecnologias img{
+  width: 6rem;
 }
-
+.title-portfolio{
+  font-size: 50px;
+}
+.cmsp{
+  font-size: 30px;
+  font-weight: 600;
+}
 }

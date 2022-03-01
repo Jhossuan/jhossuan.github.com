@@ -586,14 +586,14 @@ nav p {
 }
 
 .card {
-  border: 2px solid #7158e2;
+  border: 2px solid #7d5fff;
   margin-top: 10px;
   border-radius: 10px;
   width: 20rem;
   min-height: 25rem;
-  background-color: #7d5fff;
+  background-color: #7158e2;
   color: #fff;
-  margin: 10px;
+  margin: 20px;
   -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.61);
           box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.61);
 }
@@ -637,7 +637,7 @@ nav p {
 /************* CONTACTAME ****************/
 #contact_me {
   text-align: center;
-  padding: 20px;
+  padding: 10px 0;
   background-color: white;
   border: 2px solid #3d3d3d;
   border-radius: 8px;
@@ -689,7 +689,7 @@ nav p {
 }
 
 #contact_me_section {
-  background-image: url(./imagenes/fondo-setup.png);
+  background-image: url(./imagenes/fondo-mobile.jpg);
   background-attachment: fixed;
   color: white;
 }
@@ -701,7 +701,7 @@ nav p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.781);
+  text-shadow: 3px 3px 3px black;
 }
 
 .uilogo img {
@@ -743,11 +743,15 @@ footer img {
     color: white;
   }
   #about_me span {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
   }
   #about_me p {
     font-size: 30px;
+  }
+  #contact_me_section {
+    background-image: url(./imagenes/fondo-setup.png);
+    background-size: cover;
   }
   section {
     padding: 4vh 10vw;
@@ -781,7 +785,7 @@ footer img {
     font-size: 4.6rem;
   }
   .saludo span {
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 500;
   }
   .iconos {
@@ -804,8 +808,15 @@ footer img {
   .cards-project {
     display: inline-block;
   }
-  .uilogo {
-    margin-left: 40%;
+  .tecnologias img {
+    width: 6rem;
+  }
+  .title-portfolio {
+    font-size: 50px;
+  }
+  .cmsp {
+    font-size: 30px;
+    font-weight: 600;
   }
 }
 /*# sourceMappingURL=style.css.map */
