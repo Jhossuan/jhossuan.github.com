@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --color-bg-primary:#778ca3;
+    --color-bg-secondary: #4b6584;
+    --color-font-primary: #d1d8e0;
+    --color-font-secondary: #a5b1c2;
+    --color-button-primary:#2bcbba; 
+    --color-button-secondary:#0fb9b1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color-bg-primary);
+}
+header{
+    min-height: 3rem;
+    background-color: var(--color-bg-secondary);
+    color:var(--color-font-primary);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.container-todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding:30px;
+    margin: 10px;
+    border-radius: 3px;
+    background-color: var(--color-bg-secondary);
+}
+.titulo, .descripcion{
+    padding: 15px;
+    width: 50vw;
+    height: 1.5rem;
+    border:none;
+    border-radius: 3px;
+    border:1px solid rgb(51, 51, 51);
+    margin: 5px;
+}
+
+.agregar{
+    width: 50vw;
+    height: 2rem;
+    border:none;
+    border-radius: 3px;
+    background-color:var(--color-button-primary);
+    color: white;
+    font-size:15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 5px;
+    transition: 0.3s;
+}
+.agregar:active{
+    background-color: var(--color-button-secondary);
+    transition: 0.3s;
+}
+.small{
+    color: var(--color-bg-primary);
+}.small a{
+    color: var(--color-button-secondary);
+}
+/* *************** CARDS ***************** */
+.delete_btn img{
+    width: 20px;
+    cursor:pointer;
+    margin: 5px 5px;
+}
+.container-cards{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards{
+    display:flex;
+    justify-content: center;
+}
+.card{
+    border: 2px solid var(--color-bg-secondary);
+    border-radius: 3px;
+    width: 80vw;
+    margin: 2px;
+}
+.name_card{
+    padding: 10px 10px;
+}
+.description_card{
+    background-color: var(--color-font-secondary);
+    padding: 30px 10px;
+}
+.error{
+    text-align: center;
+    background-color: rgb(255, 38, 38);
+    font-size: 15px;
+    padding: 5px;
+    margin:0;
+    color:white;
+    transform: translate(0,-500%);
+    transition: 0.2s ease-in-out;
+}
+.error.is-active{
+    transform: translate(0,0);
+}
+
+/* ********** DESKTOP ************ */
+@media (min-width:850px){
+    .card{
+        width: 40vw;
+        display: inline-block;
+    }
+}
