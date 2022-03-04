@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azul-oscuro-duro: #03256C;
+    --azul-oscuro-medio: #2541B2;
+    --azul-claro-duro:#2541B2;
+    --azul-claro-medio: #06BEE1;
+    --azul-claro-suave:#57e3ff;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: var(--azul-claro-medio);
+    color:white;
+    height: 3.5rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing:4px;
+}
+
+/* ***************** CARTA DE POKEMON ************* */
+.form{
+    display: flex;
+    justify-content: center;
+    padding:10px
+}
+.card{
+    background-color: var(--azul-claro-suave);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    width: 13rem;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+    border: 2px solid var(--azul-oscuro-medio);
+}
+.name{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--azul-oscuro-medio);
+    padding: 2px 30px;
+    border-radius: 20px;
+    color: white;
+}
+.pokeimg{
+    width: 10rem;
+    padding: 10px;
+}
+.idx{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--azul-oscuro-medio);
+    color: white;
+    padding:2px 50px;
+    border-radius:10px;
+}
+.exp{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(255, 62, 62);
+    color: white;
+    padding:2px 50px;
+    border-radius:10px;
+}
+.attack{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding:2px 50px;
+    border-radius:10px;
+}

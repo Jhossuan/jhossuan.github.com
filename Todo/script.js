@@ -4,15 +4,27 @@ const d = document,
       input_descripcion = d.querySelector(".descripcion"),
       container_cards = d.querySelector('.container-cards');
 
+      
+
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+tasks.forEach((el)=>{
+    addCard(el.titulo, el.descripcion, el.id);
+})
+
+
 function removeError(){
     setTimeout(()=>{
         d.querySelector(".error").classList.remove('is-active');
-        },2000)
+    },2000)
 }
 
-function addCard(titulo, descripcion){
+function addCard(titulo, descripcion, id){
+
     const cards = d.createElement('div');
     cards.className = "cards";
+    cards.id = id;
+    console.log(cards);
 
     const card = d.createElement('div');
     card.className = "card";
@@ -48,6 +60,24 @@ function addCard(titulo, descripcion){
     //  console.log(cards)
 }
 
+// function deleteStorage(){
+//     let deleteLS = JSON.parse(localStorage.getItem("tasks")) || [];
+//     tasks.forEach(element => {
+//         deleteLS.push(element);
+//     });
+//     tasks = deleteLS;
+//     localStorage.setItem("tasks",JSON.stringify("tasks"));
+//     console.log(tasks);
+// }
+
+const reload = d.querySelector(".reload");
+reload.addEventListener('click',()=>{
+    if(window.confirm("Seguro que deseas eliminar todas tus tareas?")){
+        localStorage.clear();
+        location.reload()
+    }
+})
+
 function deleteCard(e){
     if(window.confirm("Acepta, si quieres eliminar la tarea")){
         let ancestor = get_ancestor(e.target, 3)
@@ -68,11 +98,11 @@ function get_ancestor(ancestor, level){
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    if(input_titulo.value === null || input_titulo.value === ""){
+    if(input_titulo.value === ""){
         console.log("Añade un titulo...")
         d.querySelector(".error").classList.add('is-active');
         removeError()
-    }else if(input_descripcion.value === null || input_descripcion.value === ""){
+    }else if(input_descripcion.value === ""){
         console.log("Llena la descripción...");
         d.querySelector(".error").classList.add('is-active');
         removeError();
@@ -80,8 +110,12 @@ form.addEventListener('submit',(e)=>{
 
         let titulo = d.querySelector(".titulo").value;
         let descripcion = d.querySelector(".descripcion").value;
+        let id = Date.now();
 
-        addCard(titulo, descripcion);
+        addCard(titulo, descripcion, id);
+        tasks.push({titulo, descripcion, id})
+        localStorage.setItem("tasks",JSON.stringify(tasks));
+        console.log(tasks)
         form.reset();
     }
 })
