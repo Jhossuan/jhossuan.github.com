@@ -20,17 +20,42 @@ body{
 
 header{
     background-color: var(--azul-claro-medio);
-    color:white;
-    height: 3.5rem;
-    font-size: 20px;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
-    letter-spacing:4px;
 }
-
+header img{
+    width: 15rem;
+}
 /* ***************** CARTA DE POKEMON ************* */
+.is-active{
+    display: none;
+}
+.pokeimgError{
+    width: 10rem;
+    padding: 10px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid red;
+    width: 20rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+.error.is-active-error{
+    display: none;
+}
 .form{
     display: flex;
     justify-content: center;
@@ -46,6 +71,7 @@ header{
     margin-right:auto;
     margin-bottom: 50px;
     border: 2px solid var(--azul-oscuro-medio);
+    box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.486);
 }
 .name{
     font-size: 20px;
