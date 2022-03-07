@@ -1,0 +1,173 @@
+//Medidas de diseño
+$Mobile : 375px;
+$Desktop : 1440px;
+
+//Colores primarios
+$Soft_blue : hsl(215, 51%, 70%);
+$Cyan : hsl(178, 100%, 50%);
+
+//Colores neutrales
+$Very_dark_blue_main_BG : hsl(217, 54%, 11%);
+$Very_dark_blue_card_BG : hsl(216, 50%, 16%);
+$Very_dark_blue_line : hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+*{
+    background-color: $Very_dark_blue_main_BG;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background-color: $Very_dark_blue_card_BG;
+    width: 20em;
+    height: 35em;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.637);
+    transition: 0.3s;
+    p{
+        color: $White;
+        font-size:20px;
+        font-family: 'Outfit';
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: transparent;
+        transition: 0.3s;
+    }
+    p:hover{
+        transition: 0.3s;
+        cursor: pointer;
+        color: $Cyan;
+    }
+    .description{
+        font-family: 'Outfit';
+        font-weight: 400;
+        color: $Soft_blue;
+        margin-left: 20px;
+        background-color: transparent;
+        float: left;
+    }
+    .price{
+        color: $Cyan;
+        font-family: 'Outfit';
+        font-weight: 300;
+        background-color: transparent;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: inline-block;
+        .icon-ethereum{
+            width: 10px;
+            background-color: transparent;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+    .days{
+        background-color: transparent;
+        font-family: 'Outfit';
+        color: $Soft_blue;
+        display: inline-block;
+        margin-top: 10px;
+        .icon-clock{
+            margin-left: 90px;
+            background-color: transparent;
+            width: 15px;
+            display:inline-block;
+            vertical-align: -2px;
+        }
+    }
+    .img_nft{
+        border-radius: 5px;
+        width: 280px;
+        margin-top: 20px;
+        margin-left: 20px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.432);
+    }
+    .perfil_img{
+        background-color: transparent;
+        width: 35px;
+        margin-top: 25px;
+        margin-left: 25px;
+        border: 2px solid white;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .perfil_img:hover{
+        transition: 0.3s;
+        border: 2px solid $Cyan;
+    }
+    .info_creador{
+        background-color: transparent;
+        display: inline-block;
+        vertical-align: 10px;
+        margin-left: 5px;
+    }
+    .creador{
+        display: inline-block;
+        background-color: transparent;
+            font-family: 'Outfit';
+            margin-left: 20px;
+            color:$Soft_blue;
+            .autor{
+                background-color: transparent;
+                color: $White;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .autor:hover{
+                transition: 0.3s;
+                color: $Cyan;
+            }
+        }
+    }
+    hr{
+        background-color: red;
+        width: 17em;
+        margin-top: 20px;
+    }
+
+.card:hover{
+    transition: 0.3s;
+    box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.637);
+}
+
+.linea{
+    border-bottom: 2px solid $Soft_blue;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+}
+.view-box{
+    display: flex;
+    justify-content: center;
+}
+.view{
+    display: none;
+    background: url('./nft-preview-card-component-main/images/icon-view.svg') no-repeat center;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    top: 4.82rem;
+    margin-left: 1.3rem;
+    width: 280px;
+    height: 280px;
+    border-radius:5px;
+}
+.img_nft:hover + .view, .img_nft + .view:hover{
+    display: block;
+    cursor: pointer;
+}
+.attribution{
+    margin-top:40rem;
+    position: absolute;
+}
+b{
+    background-color: transparent;
+}
+
+
+
