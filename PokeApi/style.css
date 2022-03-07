@@ -66,24 +66,24 @@ header img{
     border-radius: 5px;
     text-align: center;
     padding: 20px;
-    width: 13rem;
+    width: 20rem;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 50px;
-    border: 2px solid var(--azul-oscuro-medio);
+    border: 2px solid rgb(211, 211, 0);
     box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.486);
 }
 .name{
-    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
     font-weight: 600;
-    background-color: var(--azul-oscuro-medio);
     padding: 2px 30px;
     border-radius: 20px;
-    color: white;
+    color: black;
 }
 .pokeimg{
-    width: 10rem;
-    padding: 10px;
+    background-image: url(./imagenes/fondo.svg);
+    width: 15rem;
 }
 .idx{
     font-size: 15px;
@@ -101,10 +101,18 @@ header img{
     padding:2px 50px;
     border-radius:10px;
 }
+.HP{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding:2px 50px;
+    border-radius:10px;
+}
 .attack{
     font-size: 15px;
     font-weight: 500;
-    background-color: black;
+    background-color: var(--azul-claro-duro);
     color: white;
     padding:2px 50px;
     border-radius:10px;

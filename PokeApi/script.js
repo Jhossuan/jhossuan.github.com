@@ -20,6 +20,11 @@ function addPokemon(data){
     const exp = d.querySelector('.exp');
     exp.textContent = `Exp ${data.base_experience}`
 
+    data.stats.forEach(element => {
+            console.log(element)
+            const hp = d.querySelector('.HP');
+            hp.textContent = `HP ${element.base_stat}`
+    });
     d.querySelector('.error').classList.add('is-active-error')
 }
 
