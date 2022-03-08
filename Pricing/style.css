@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Linear-Gradient: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: var(--Very-Light-Grayish-Blue);
+    background-image: url(./images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+.bg-bottom{
+    background-image: url(./images/bg-bottom.svg);
+    background-color: var(--Very-Light-Grayish-Blue);
+    background-repeat:no-repeat ;
+    height: 10rem;
+}
+
+.is-active{
+    display: none;
+}
+/* **** PRIMERA PARTE DE LA PAGINA **** */
+.switch{
+    text-align: center;
+    padding: 5rem;
+    align-items: center;
+}
+.pricing{
+    display: flex;
+    justify-content: center;
+}
+.our-pricing{
+    margin-bottom:45px;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 30px;
+}
+.fechas{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.annually, .monthly{
+    color: var(--Grayish-Blue);
+    padding: 0 30px 0 30px;
+}
+   /* ******* Switch Button ******** */
+.switch-button {
+    display: inline-flex;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background:var(--Linear-Gradient);
+    width: 2.5rem;
+    height: 1.5rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    margin: 1.5px 1.5px 1.5px 1.5px;
+    display: block;
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: white;
+    content: '';
+    border-radius: 50%;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background:var(--Linear-Gradient);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(0.95rem);
+}
+
+/* *********** Seccion 2 - Cartas de precios ***************** */
+.container{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    border-radius:10px;
+    width: 22rem;
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
+    margin-bottom: 50px;
+}
+
+.tipe{
+    font-size: 20px;
+    color: var(--Dark-Grayish-Blue);
+}
+.price{
+    font-size: 70px;
+    color: var(--Dark-Grayish-Blue);
+    padding: 20px 0 20px 0;
+}
+.storage, .users-allowed, .gb{
+    padding: 20px;
+    color: var(--Dark-Grayish-Blue)
+}
+.button{
+    border: none;
+    padding:10px;
+    border-radius:5px;
+    margin: 30px 0 10px 0;
+    width: 100%;
+    padding: 15px;
+    background: var(--Linear-Gradient);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.button:active{
+    background: white;
+    border:1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    outline: none;
+    transition: 0.1s;
+}
+
+/* ------CARTA DEL MEDIO ------- */
+.card-p{
+    border-radius:10px;
+    width: 22rem;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
+    margin-bottom: 50px;
+    background:linear-gradient(to bottom, hsl(236, 96%, 78%), hsl(237, 63%, 64%));
+}
+.tipe-p{
+    font-size: 20px;
+    color: white;
+}
+.price-p{
+    font-size: 70px;
+    color: white;
+    padding: 20px 0 20px 0;
+}
+.storage-p, .users-allowed-p, .gb-p{
+    padding: 20px;
+    color: white;
+}
+.button-p{
+    border: none;
+    padding:10px;
+    border-radius:5px;
+    margin: 30px 0 10px 0;
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: hsl(237, 63%, 64%);
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.button-p:active{
+    transition: 0.1s;
+    background: transparent;
+    border:1px solid white;
+    color: white;
+    outline: none;
+}
+
+/* ********** Cambiar valores ************ */
+.price-1-month, .price-3-month{
+    font-size: 70px;
+    color: var(--Dark-Grayish-Blue);
+    padding: 20px 0 20px 0;
+    display: none;
+}
+.price-2-month{
+    font-size: 70px;
+    color: white;
+    padding: 20px 0 20px 0;
+    display: none;
+}
+.is-active-month{
+    display: block;
+}
+
+/* ************* DESKTOP **************** */
+@media(min-width: 800px){
+    .cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        transition: 0.3s;
+    }
+    .card:hover{
+        padding: 40px 30px 40px 30px;
+        margin-bottom: 30px;
+        margin-top: -20px;
+        transition: 0.3s;
+    }
+    .card-p{
+        border-radius:10px;
+        width: 22rem;
+        text-align: center;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
+        background:linear-gradient(to bottom, hsl(236, 96%, 78%), hsl(237, 63%, 64%));
+        transition: 0.3s;
+    }
+    .card-p:hover{
+        margin-bottom: 30px;
+        margin-top: -20px;
+        padding: 40px 30px 40px 30px;
+        transition: 0.3s;
+    }
+}
