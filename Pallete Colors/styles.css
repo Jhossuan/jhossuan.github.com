@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+#palleteContainer{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.palleteItem{
+    transition: 0.5s;
+}
+
+.palleteItem span{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    display: inline-block;
+    min-width: 80px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+button{
+    font-family: 'Red Hat Text', sans-serif;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:active{
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 215, 215);
+}
